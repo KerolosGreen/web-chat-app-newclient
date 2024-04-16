@@ -10,5 +10,6 @@
 @media only screen and (max-width: 600px) {
   .App{
       height: auto;
+      padding: 5px;
   }
 }
