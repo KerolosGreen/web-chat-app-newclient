@@ -1,0 +1,68 @@
+@import url('https://fonts.cdnfonts.com/css/general-sans');
+.Options{
+    /* background-color: #252331; */
+    /* background-color: #2c2b35; */
+    background-color: #ffffff;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    font-family: 'General Sans';
+    font-weight: 400;
+    border-radius: 20px;
+    box-shadow: 5px 0px 20px 0px rgba(0, 0, 0, 0.148);
+}
+.Options h4{
+    margin: 10px;
+    font-weight: 600;
+    font-size: 21px;
+}
+.Options p{
+    font-size: 12px;
+    margin: 10px;
+}
+.Options input{
+    /* background-color: rgba(0, 0, 0, 0.041); */
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.148);
+    border: none;
+    margin: 5px;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+}
+.Options input:focus{
+outline: none;
+
+}
+
+.Options button{
+    height: 40px;
+    width: 25%;
+    border: none;
+    border-radius: 20px;
+    background-color: #2155bf;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.178);
+    color: white;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .Options{
+       width: 94%;
+    }
+    .Options input{
+
+        width: 70%;
+        height: 50px;
+        font-size: 16px;
+    }
+    .Options button{
+        width: 40%;
+        height: 45px;
+        font-size: 16px;
+    }
+  }

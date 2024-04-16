@@ -1,0 +1,19 @@
+.Hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px auto 0px auto;
+    flex-direction: column;
+    height: 45%;
+    color: black;
+}
+.Hero h2{
+    font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+    .Hero h2{
+        font-weight: 400;
+        font-size: 18px;
+    }
+  }
