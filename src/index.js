@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { io } from 'socket.io-client';
 
-const socket = io("http://localhost:3005");
+const socket = io("https://web-chat-backend-wb3y.onrender.com");
 
   // useEffect(
   //   ()=>{
