@@ -212,11 +212,14 @@ color: black;
     display: flex;
     font-weight: 400;
     font-size: 11px;
-    color: rgba(255, 255, 255, 0.308);
+    color: rgba(0, 0, 0, 0.308);
     flex-direction: column-reverse;
     justify-content: flex-start;
     margin-right: auto;
     display: none;
+}
+.typing p{
+    color: black;
 }
 
 @media only screen and (max-width: 600px) {
