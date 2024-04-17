@@ -136,12 +136,7 @@ function ChatBox({username,socket,room}){
             "time": time.toLocaleString('en-US', { hour: 'numeric',minute:'2-digit', hour12: true })
         }
          await setmessages((messages)=>[...messages,message]);
-        // chatbody.scrollTo(0, chatbody.scrollHeight+100);
-        chatbody.scrollTo({
-            top: chatbody.scrollHeight + 300,
-            left: 0,
-            behavior: "smooth",
-          });
+        chatbody.scrollTo(0, chatbody.scrollHeight);
     }
         // setTimeout(
         //     ()=>{
@@ -228,7 +223,7 @@ function ChatBox({username,socket,room}){
             <input type='text' placeholder='Type Something...' 
             onChange={onchange_message}
             onKeyDown={(e) => {
-            if (e.code === 'Enter' || e.keyCode == 13) {
+            if (e.code === 'Enter') {
                 sendmessage();
             }
             }}
