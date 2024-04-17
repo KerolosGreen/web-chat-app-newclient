@@ -220,7 +220,14 @@ function ChatBox({username,socket,room}){
             </div>
 
             <div className='ChatBox-Input'>
-            <input type='text' placeholder='Type Something...' onChange={onchange_message}/>
+            <input type='text' placeholder='Type Something...' 
+            onChange={onchange_message}
+            onKeyDown={(e) => {
+            if (e.code === 'Enter') {
+                sendmessage();
+            }
+            }}
+            />
             <button className='send-message-button' onClick={sendmessage}><IoIosSend /></button>
             </div>
             
