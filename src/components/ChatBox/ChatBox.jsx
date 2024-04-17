@@ -136,7 +136,8 @@ function ChatBox({username,socket,room}){
             "time": time.toLocaleString('en-US', { hour: 'numeric',minute:'2-digit', hour12: true })
         }
          await setmessages((messages)=>[...messages,message]);
-        chatbody.scrollTo(0, chatbody.scrollHeight);
+        // chatbody.scrollTo(0, chatbody.scrollHeight);
+        chatbody.scrollTop = chatbody.scrollHeight;
     }
         // setTimeout(
         //     ()=>{
