@@ -127,7 +127,7 @@ function ChatBox({username,socket,room}){
     }
       }
 
-    async function addtochat(msg,user){
+     function addtochat(msg,user){
         const chatbody = document.body.getElementsByClassName('ChatBox-Body')[0];
         let time =new Date();
         let message = {
@@ -135,7 +135,7 @@ function ChatBox({username,socket,room}){
             "sender":user,
             "time": time.toLocaleString('en-US', { hour: 'numeric',minute:'2-digit', hour12: true })
         }
-         await setmessages((messages)=>[...messages,message]);
+        setmessages((messages)=>[...messages,message]);
         // chatbody.scrollTo(0, chatbody.scrollHeight);
         chatbody.scrollTop = chatbody.scrollHeight;
     }
