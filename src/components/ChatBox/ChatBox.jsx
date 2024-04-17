@@ -137,7 +137,7 @@ function ChatBox({username,socket,room}){
         }
          await setmessages((messages)=>[...messages,message]);
         // chatbody.scrollTo(0, chatbody.scrollHeight);
-        chatbody.scrollTop = chatbody.scrollHeight;
+        await (chatbody.scrollTop = chatbody.scrollHeight);
     }
         // setTimeout(
         //     ()=>{
