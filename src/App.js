@@ -28,7 +28,7 @@ function App({socket}) {
   )
 
   function join_room(){
-    window.alert('Joining Room...');
+    window.alert('Joining Room '+room+'...');
     socket.emit("join_room",username,room,(message)=>{
         console.log(message)
       setshowchat(true);
