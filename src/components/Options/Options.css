@@ -53,6 +53,8 @@ outline: none;
 @media only screen and (max-width: 600px) {
     .Options{
        width: 94%;
+padding:5px;
+margin:10px auto;
     }
     .Options input{
 
