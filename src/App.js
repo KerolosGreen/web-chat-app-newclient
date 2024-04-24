@@ -30,6 +30,7 @@ function App({socket}) {
   function join_room(){
     socket.emit("join_room",username,room,(message)=>{
         console.log(message)
+      setshowchat(true);
     })
   }
 
