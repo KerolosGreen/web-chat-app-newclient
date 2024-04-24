@@ -20,7 +20,7 @@ function Options({setshowchat,username,setusername,room,setroom,socket,join_room
     async function openchat(){
         if(username!=""&&room!=""){
             await join_room();
-            setshowchat(true);
+            // setshowchat(true);
         }
         else{
             alert("Enter Your Name And Room Correctly !")
