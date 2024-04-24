@@ -30,10 +30,10 @@ function Options({setshowchat,username,setusername,room,setroom,socket,join_room
     return(
         <div className='Options'>
             <Hero/>
-            <h4>Web Chat</h4>
+{/*             <h4>Web Chat</h4> */}
             <input type='text' placeholder='Enter Your Name' onChange={onchange_username}/>
             <input type='text' placeholder='Enter Room Name To Join' onChange={onchange_room}/>
-            <p>* If There Is No Room , Write A New Name To Create One !</p>
+            <p>New here? Create a chat room by giving it a name.</p>
             <button onClick={openchat}>Join Room</button>
         </div>
     )
